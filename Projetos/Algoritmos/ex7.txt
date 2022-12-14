@@ -1,0 +1,35 @@
+#include <iostream>
+#include <locale.h>
+
+/* Exercício 7:
+Algoritmo;
+Entrada:
+Leia Salmin,Hrstr;
+Processamento:
+Valph = Salmin/240;
+Sal = Valph*Hrstr;
+Saída:
+Sal; */
+
+//Valph = Valor por hora trabalhada;
+//Hrstr = Horas trabalhadas;
+//240 é o máximo de horas trabalhadas permitidas pela legislação em um mês;
+
+using namespace std;
+
+float Hrstr, Valph, Salmin, Sal;
+int main () {
+
+	setlocale (LC_ALL,"Portuguese");
+
+	cout<<"Digite o salário mínimo : ";
+	cin>>Salmin;
+	cout<<"Digite a quantidade de horas trabalhadas: ";
+	cin>>Hrstr;
+	Valph = Salmin/240;
+	Sal = (Valph*Hrstr);
+	
+	cout<<endl<<endl<<"O salário é igual a R$"<<Sal<<endl;
+	
+	return 0;
+}

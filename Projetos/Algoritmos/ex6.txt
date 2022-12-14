@@ -1,0 +1,32 @@
+#include <iostream>
+#include <locale.h>
+
+/* Exercício 6:
+Algoritmo;
+Entrada:
+Leia Salário1, Salário2, Percentual de aumento (percent), percent2;
+Processamento:
+percent2 = percent/100;
+Sal2 = Sal1*(1+percent2);
+Saída:
+Sal2; */
+
+using namespace std;
+
+float Sal1, Sal2, percent, percent2;
+int main () {
+
+	setlocale (LC_ALL,"Portuguese");
+
+	cout<<"Digite o salário anterior: ";
+	cin>>Sal1;
+	cout<<"Digite o percentual de aumento do salário (%): ";
+	cin>>percent;
+
+	percent2 = percent/100;
+	Sal2 = Sal1*(1+percent2);
+	
+	cout<<endl<<endl<<"O novo salário é: "<<Sal2<<endl;
+	
+	return 0;
+}

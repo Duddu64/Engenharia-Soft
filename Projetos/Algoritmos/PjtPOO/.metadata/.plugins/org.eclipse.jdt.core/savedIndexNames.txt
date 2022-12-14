@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Users\luize\OneDrive\Documentos\Algoritmos\PjtPOO\.metadata\.plugins\org.eclipse.jdt.core
+3865720320.index
+3292128955.index

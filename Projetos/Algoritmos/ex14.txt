@@ -1,0 +1,27 @@
+#include <iostream>
+#include <locale.h>
+
+/* Exercício 14:
+Algoritmo;
+Entrada:
+Leia °C(TempC);
+Processamento:
+TempF=180*(TempC-32)/100;
+Saída:
+TempF*/
+
+using namespace std;
+
+float TempC, TempF, TempF1;
+int main () {
+
+	setlocale (LC_ALL,"Portuguese");
+
+	cout<<"Digite a temperatura (°C): ";
+	cin>>TempC;
+	TempF1=(180*(TempC-32));
+	TempF=(TempF1/100);
+
+	cout<<endl<<endl<<"A temperatura em graus fahrenheit é "<<TempF<<"°F"<<endl;
+	return 0;
+}

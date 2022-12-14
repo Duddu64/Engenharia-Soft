@@ -1,0 +1,32 @@
+#include <iostream>
+#include <locale.h>
+#include <math.h>
+
+/* Exercício 11:
+Algoritmo;
+Entrada:
+Leia Número Inteiro maior que 0(Num1);
+Processamento:
+Num1c=(pow(Num1,2));
+Num1q=(pow(Num1,3));
+Saída:
+Numq, Numc*/
+
+using namespace std;
+
+int Num1q, Num1c, Num1;
+int main () {
+
+	setlocale (LC_ALL,"Portuguese");
+
+	cout<<"Digite o número: ";
+	cin>>Num1;
+
+	Num1c=(pow(Num1,3));
+	Num1q=(pow(Num1,2));
+
+	cout<<endl<<endl<<"O número ao quadrado é: "<<Num1q<<endl;
+	cout<<endl<<endl<<"O número ao cubo é: "<<Num1c<<endl;
+
+	return 0;
+}

@@ -1,0 +1,29 @@
+#include <iostream>
+#include <locale.h>
+
+/* Exercício 12:
+Algoritmo;
+Entrada:
+Leia Custo (c), Valor do ingresso(Vi);
+Processamento:
+(Qt=C/Vi+1);
+Saída:
+Qt*/
+
+using namespace std;
+
+float Qt, C, Vi;
+int main () {
+
+	setlocale (LC_ALL,"Portuguese");
+
+	cout<<"Digite o custo do espetâculo(R$): ";
+	cin>>C;
+	cout<<"Digite o valor do ingresso(R$): ";
+	cin>>Vi;
+	Qt=(C/Vi+1);
+
+	cout<<endl<<endl<<"O número de ingressos que devem ser vendidos para superar o custo é: "<<Qt<<endl;
+
+	return 0;
+}

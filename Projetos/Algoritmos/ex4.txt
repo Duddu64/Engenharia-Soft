@@ -1,0 +1,28 @@
+#include <iostream>
+#include <locale.h>
+
+/* Exercício 4:
+Algoritmo;
+Entrada:
+Leia Pesokg;
+Processamento:
+Pesog = Pesokg*1000;
+Saída:
+Pesog; */
+
+using namespace std;
+
+float Pesokg, Pesog;
+int main () {
+
+	setlocale (LC_ALL,"Portuguese");
+
+	cout<<"Digite o seu em peso(Kg): ";
+	cin>>Pesokg;
+	Pesog=Pesokg*1000;
+	
+	cout<<endl<<endl<<"Seu peso em gramas é igual a: "<<Pesog<<"g"<<endl;
+	
+	return 0;
+}
+

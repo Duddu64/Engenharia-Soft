@@ -1,0 +1,30 @@
+#include <iostream>
+#include <locale.h>
+
+/* Exercício 3:
+Algoritmo;
+Entrada:
+Leia Anonas, Anoat;
+Processamento:
+Idade = Anoat-Anonas;
+Saída:
+Idade; */
+
+using namespace std;
+
+int Anonas, Anoat, Idade;
+int main () {
+
+	setlocale (LC_ALL,"Portuguese");
+
+	cout<<"Digite o ano de nascimento: ";
+	cin>>Anonas;
+	cout<<"Digite o ano atual: ";
+	cin>>Anoat;
+
+	Idade=(Anoat-Anonas);
+	
+	cout<<endl<<endl<<"A sua idade é: "<<Idade<<endl;
+	
+	return 0;
+}

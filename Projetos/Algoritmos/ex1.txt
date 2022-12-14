@@ -1,0 +1,27 @@
+#include <iostream>
+#include <locale.h>
+
+/* Exercício 1:
+Algoritmo;
+Entrada:
+Leia Num 1, Num2;
+Processamento:
+Num3 = Num1-Num2;
+Saída:
+ Num3; */
+
+using namespace std;
+
+int Num1, Num2, Num3;
+int main () {
+	setlocale (LC_ALL,"Portuguese");
+	cout<<"Digite o primeiro número: ";
+	cin>>Num1;
+	cout<<"Digite o segundo número: ";
+	cin>>Num2;
+	Num3=(Num1-Num2);
+	
+	cout<<endl<<endl<<"A solução é: "<<Num3<<endl;
+	
+	return 0;
+}

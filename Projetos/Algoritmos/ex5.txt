@@ -1,0 +1,38 @@
+#include <iostream>
+#include <locale.h>
+
+/* Exercício 5:
+Algoritmo;
+Entrada:
+Leia Not1, Not2, Not3, Pes1, Pes2, Pes3;
+Processamento:
+Mediapon = (Not1*Pes1+Not2*Pes2+Not3*Pes3)/Pes1+Pes2+Pes3;
+Saída:
+ Média Ponderada; */
+
+using namespace std;
+
+float Not1, Not2, Not3, Pes1, Pes2, Pes3, Mediapon;
+int main () {
+
+	setlocale (LC_ALL,"Portuguese");
+
+	cout<<"Digite a primeira nota: ";
+	cin>>Not1;
+	cout<<"Digite o peso da primeira nota: ";
+	cin>>Pes1;
+	cout<<"Digite a segunda nota: ";
+	cin>>Not2;
+	cout<<"Digite o peso da segunda nota: ";
+	cin>>Pes2;
+	cout<<"Digite a terceira nota: ";
+	cin>>Not3;
+	cout<<"Digite o peso da terceira nota: ";
+	cin>>Pes3;
+
+	float Mediapon=(Not1*Pes1+Not2*Pes2+Not3*Pes3)/(Pes1+Pes2+Pes3);
+	
+	cout<<endl<<endl<<"A nota final é: "<<Mediapon<<endl;
+	
+	return 0;
+}

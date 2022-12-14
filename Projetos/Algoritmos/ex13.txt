@@ -1,0 +1,56 @@
+#include <iostream>
+#include <locale.h>
+
+/* Exercício 13:
+Algoritmo;
+Entrada:
+Leia Num1;
+Processamento:
+Num1*1=Numf;
+Num1*2=Numf1;
+Num1*3=Numf2;
+Num1*4=Numf3;
+Num1*5=Numf4;
+Num1*6=Numf5;
+Num1*7=Numf6;
+Num1*8=Numf7;
+Num1*9=Numf8;
+Num1*10=Numf9;
+Saída:
+Numf, Numf1, Numf2, Numf3, Numf4, Numf5, Numf6, Numf7, Numf8, Numf9;*/
+
+using namespace std;
+
+int Num1,Numf, Numf1, Numf2, Numf3, Numf4, Numf5, Numf6, Numf7, Numf8, Numf9;
+int main () {
+
+	setlocale (LC_ALL,"Portuguese");
+
+	cout<<"Digite o número multiplicador: ";
+	cin>>Num1;
+
+	Numf=Num1*1;
+	Numf1=Num1*2;
+	Numf2=Num1*3;
+	Numf3=Num1*4;
+	Numf4=Num1*5;
+	Numf5=Num1*6;
+	Numf6=Num1*7;
+	Numf7=Num1*8;
+	Numf8=Num1*9;
+	Numf9=Num1*10;
+
+	cout<<endl<<endl<<"Os valores da tabuada deste número são: "<<endl;
+	cout<<Numf<<endl;
+	cout<<Numf1<<endl;
+	cout<<Numf2<<endl;
+	cout<<Numf3<<endl;
+	cout<<Numf4<<endl;
+	cout<<Numf5<<endl;
+	cout<<Numf6<<endl;
+	cout<<Numf7<<endl;
+	cout<<Numf8<<endl;
+	cout<<Numf9<<endl;
+
+	return 0;
+}

@@ -1,0 +1,30 @@
+#include <iostream>
+#include <locale.h>
+
+/* Exercício 9:
+Algoritmo;
+Entrada:
+Leia Base, Altura (H);
+Processamento:
+Área=H*Base;
+ÁreaT=Área/2;
+Saída:
+Área*/
+
+using namespace std;
+
+int Areat, Area, Base, H;
+int main () {
+
+	setlocale (LC_ALL,"Portuguese");
+
+	cout<<"Digite a base do triângulo retângulo: ";
+	cin>>Base;
+	cout<<"Digite a altura do triângulo: ";
+	cin>>H;
+	Area=(Base*H);
+	Areat=(Area/2);
+	cout<<endl<<endl<<"A área do triângulo retângulo é: "<<Areat<<endl;
+	
+	return 0;
+}

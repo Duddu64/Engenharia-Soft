@@ -1,0 +1,29 @@
+#include <iostream>
+#include <locale.h>
+
+/* Exercício 2:
+Algoritmo;
+Entrada:
+Leia Larg, Comp;
+Processamento:
+Área = Larg*Comp;
+Saída:
+Área; */
+
+using namespace std;
+
+int Larg, Comp, Area;
+int main () {
+
+	setlocale (LC_ALL,"Portuguese");
+
+	cout<<"Digite a Largura: ";
+	cin>>Larg;
+	cout<<"Digite o Comprimento: ";
+	cin>>Comp;
+	Area=(Comp*Larg);
+	
+	cout<<endl<<endl<<"A área total é: "<<Area<<endl;
+	
+	return 0;
+}

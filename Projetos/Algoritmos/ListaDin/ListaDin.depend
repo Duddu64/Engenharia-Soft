@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1661011785 source:c:\users\luize\onedrive\documentos\algoritmos\listadin\main.cpp
+	<iostream>
+	<locale>
+	<stdlib.h>
+	<stdio.h>
+
+1661028546 source:c:\users\luize\onedrive\documentos\algoritmos\listaval.cpp
+	<iostream>
+

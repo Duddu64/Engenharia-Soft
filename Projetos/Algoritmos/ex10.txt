@@ -1,0 +1,29 @@
+#include <iostream>
+#include <locale.h>
+#include <math.h>
+
+/* Exercício 10:
+Algoritmo;
+Entrada:
+Leia Pi(3,14), Raio (R);
+Processamento:
+Área=(pow(R,2));
+Áreac=(Área*3.14);
+Saída:
+Áreac*/
+
+using namespace std;
+
+int Areac, Area, R;
+int main () {
+
+	setlocale (LC_ALL,"Portuguese");
+
+	cout<<"Digite o raio da circunferência: ";
+	cin>>R;
+	Area=(pow(R,2));
+	float Areac=(Area*3.14);
+	cout<<endl<<endl<<"A área do circulo é: "<<Areac<<endl;
+	
+	return 0;
+}
